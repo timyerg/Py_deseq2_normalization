@@ -2,6 +2,7 @@ import pandas as pd
 import numpy as np
 
 # Function that will perform DESeq2-like transformation on dataframe
+# Features as rows and samples as columns 
 def deseq2_norm(df):
     norm = (df.apply(np.log))                              # take a log of df
     norm['mean'] = norm.mean(numeric_only=True, axis=1)    # mean as pseudoreference
