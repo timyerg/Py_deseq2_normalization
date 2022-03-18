@@ -1,6 +1,8 @@
 # Py_deseq2_normalization
-Known as Median of ratios transformation
+Deseq2-like normalization in Python.
 
-This function will take as input pandas dataframe and perform DESeq2-like normalization of input abundances
+Known as Median of ratios transformation.
+
+This function will take as input pandas dataframe (features/functions as rows and samples as columns) with counts and perform DESeq2-like normalization.
 
 Usage: copy it in your python3 script and call it when necessary.
